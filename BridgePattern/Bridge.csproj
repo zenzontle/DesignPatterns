@@ -7,7 +7,7 @@
     <ProjectGuid>{D9055035-790B-48C6-A95A-7F4F4964E0D2}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BridgePattern</RootNamespace>
+    <RootNamespace>Bridge</RootNamespace>
     <AssemblyName>BridgePattern</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
