@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DesignPatterns.AbstractFactory.AbstractCars;
-using DesignPatterns.AbstractFactory.AbstractFactories;
-using DesignPatterns.AbstractFactory.ConcreteCars;
+using AbstractFactory.AbstractCars;
+using AbstractFactory.AbstractFactories;
+using AbstractFactory.ConcreteCars;
 
-namespace DesignPatterns.AbstractFactory.ConcreteFactories
+namespace AbstractFactory.ConcreteFactories
 {
     class MercedesCarFactory : CarFactory
     {

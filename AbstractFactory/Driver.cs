@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DesignPatterns.AbstractFactory.AbstractCars;
-using DesignPatterns.AbstractFactory.AbstractFactories;
+using AbstractFactory.AbstractCars;
+using AbstractFactory.AbstractFactories;
 
-namespace DesignPatterns.AbstractFactory
+namespace AbstractFactory
 {
     class Driver
     {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DesignPatterns.AbstractFactory.AbstractCars;
+using AbstractFactory.AbstractCars;
 
-namespace DesignPatterns.AbstractFactory.AbstractFactories
+namespace AbstractFactory.AbstractFactories
 {
     abstract class CarFactory
     {

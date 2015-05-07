@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using DesignPatterns.AbstractFactory.AbstractCars;
+using AbstractFactory.AbstractCars;
 
-namespace DesignPatterns.AbstractFactory.ConcreteCars
+namespace AbstractFactory.ConcreteCars
 {
     class FordFamilyCar : FamilyCar
     {

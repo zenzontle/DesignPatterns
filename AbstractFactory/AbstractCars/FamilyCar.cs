@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DesignPatterns.AbstractFactory.AbstractCars
+namespace AbstractFactory.AbstractCars
 {
     abstract class FamilyCar
     {
