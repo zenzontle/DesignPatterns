@@ -7,8 +7,8 @@
     <ProjectGuid>{BF1F9CE4-D4E3-4F45-88A9-2CE11DDCECF7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TemplateMethod</RootNamespace>
-    <AssemblyName>TemplateMethod</AssemblyName>
+    <RootNamespace>Concepts.TemplateMethod</RootNamespace>
+    <AssemblyName>Concepts.TemplateMethod</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

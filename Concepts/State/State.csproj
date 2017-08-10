@@ -7,8 +7,8 @@
     <ProjectGuid>{D878186A-BB66-42C2-9AB3-41F2ED53C4D6}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>State</RootNamespace>
-    <AssemblyName>State</AssemblyName>
+    <RootNamespace>Concepts.State</RootNamespace>
+    <AssemblyName>Concepts.State</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

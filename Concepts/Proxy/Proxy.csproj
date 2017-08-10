@@ -7,8 +7,8 @@
     <ProjectGuid>{9E15B00D-40F3-4206-B572-89B8BF38C92E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Proxy</RootNamespace>
-    <AssemblyName>Proxy</AssemblyName>
+    <RootNamespace>Concepts.Proxy</RootNamespace>
+    <AssemblyName>Concepts.Proxy</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -7,8 +7,8 @@
     <ProjectGuid>{DECD48A0-1645-43EB-86A6-D841B1C1BA98}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Adapter</RootNamespace>
-    <AssemblyName>Adapter</AssemblyName>
+    <RootNamespace>Concepts.Adapter</RootNamespace>
+    <AssemblyName>Concepts.Adapter</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

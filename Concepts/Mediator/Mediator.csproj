@@ -7,8 +7,8 @@
     <ProjectGuid>{6255B7B3-3950-4ADE-B760-BB3CA14247A5}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Mediator</RootNamespace>
-    <AssemblyName>Mediator</AssemblyName>
+    <RootNamespace>Concepts.Mediator</RootNamespace>
+    <AssemblyName>Concepts.Mediator</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

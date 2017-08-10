@@ -7,8 +7,8 @@
     <ProjectGuid>{4DA8B900-B834-4E72-BA6E-589CFBE0BFD6}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Facade</RootNamespace>
-    <AssemblyName>Facade</AssemblyName>
+    <RootNamespace>Concepts.Facade</RootNamespace>
+    <AssemblyName>Concepts.Facade</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

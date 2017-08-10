@@ -7,8 +7,8 @@
     <ProjectGuid>{9D9F3960-2D29-4880-AB7A-99C662EED59F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Command</RootNamespace>
-    <AssemblyName>Command</AssemblyName>
+    <RootNamespace>Concepts.Command</RootNamespace>
+    <AssemblyName>Concepts.Command</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

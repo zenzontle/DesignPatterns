@@ -7,8 +7,8 @@
     <ProjectGuid>{7B9DF7BF-A821-46C9-8924-3709BB90CEF6}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Iterator</RootNamespace>
-    <AssemblyName>Iterator</AssemblyName>
+    <RootNamespace>Concepts.Iterator</RootNamespace>
+    <AssemblyName>Concepts.Iterator</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

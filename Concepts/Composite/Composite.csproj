@@ -7,8 +7,8 @@
     <ProjectGuid>{CC2EEDDE-D8CB-4EC6-908E-7AA24B855B5F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Composite</RootNamespace>
-    <AssemblyName>Composite</AssemblyName>
+    <RootNamespace>Concepts.Composite</RootNamespace>
+    <AssemblyName>Concepts.Composite</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

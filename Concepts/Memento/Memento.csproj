@@ -7,8 +7,8 @@
     <ProjectGuid>{3279AE36-FB47-42D1-A75C-8037D33CF961}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Memento</RootNamespace>
-    <AssemblyName>Memento</AssemblyName>
+    <RootNamespace>Concepts.Memento</RootNamespace>
+    <AssemblyName>Concepts.Memento</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

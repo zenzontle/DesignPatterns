@@ -7,8 +7,8 @@
     <ProjectGuid>{5FC30B20-B099-4BF8-9AA3-36387F4D23F8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Factor</RootNamespace>
-    <AssemblyName>Factor</AssemblyName>
+    <RootNamespace>Concepts.Factory</RootNamespace>
+    <AssemblyName>Concepts.Factory</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -7,8 +7,8 @@
     <ProjectGuid>{1F682FE1-EA29-4BB1-B7FC-33D11F6A02A4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FactoryExample</RootNamespace>
-    <AssemblyName>FactoryExample</AssemblyName>
+    <RootNamespace>Examples.Factory</RootNamespace>
+    <AssemblyName>Examples.Factory</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

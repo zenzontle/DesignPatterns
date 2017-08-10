@@ -7,8 +7,8 @@
     <ProjectGuid>{17738181-72DA-4298-8B59-770DB120B4CE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Flyweight</RootNamespace>
-    <AssemblyName>Flyweight</AssemblyName>
+    <RootNamespace>Concepts.Flyweight</RootNamespace>
+    <AssemblyName>Concepts.Flyweight</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -7,8 +7,8 @@
     <ProjectGuid>{ED2BD90E-CDD4-472D-82DB-6E154D423426}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AbstractFactory</RootNamespace>
-    <AssemblyName>AbstractFactory</AssemblyName>
+    <RootNamespace>Concepts.AbstractFactory</RootNamespace>
+    <AssemblyName>Concepts.AbstractFactory</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

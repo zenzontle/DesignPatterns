@@ -58,7 +58,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateMethod", "Concepts\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Concepts\Visitor\Visitor.csproj", "{E497FFE4-2B90-48B9-A8FA-05EE2768CCBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryExample", "Examples\FactoryExample\FactoryExample.csproj", "{1F682FE1-EA29-4BB1-B7FC-33D11F6A02A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Examples\Factory\Factory.csproj", "{1F682FE1-EA29-4BB1-B7FC-33D11F6A02A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

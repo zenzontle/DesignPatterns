@@ -7,8 +7,8 @@
     <ProjectGuid>{5BC15EA3-EFC8-43DF-A319-D4274F9EB6E3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Observer</RootNamespace>
-    <AssemblyName>Observer</AssemblyName>
+    <RootNamespace>Concepts.Observer</RootNamespace>
+    <AssemblyName>Concepts.Observer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

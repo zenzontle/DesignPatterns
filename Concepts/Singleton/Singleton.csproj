@@ -7,8 +7,8 @@
     <ProjectGuid>{8D81C5AA-3910-4990-A5E8-455E68CBFB19}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Singleton</RootNamespace>
-    <AssemblyName>Singleton</AssemblyName>
+    <RootNamespace>Concepts.Singleton</RootNamespace>
+    <AssemblyName>Concepts.Singleton</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

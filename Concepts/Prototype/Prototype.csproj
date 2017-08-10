@@ -7,8 +7,8 @@
     <ProjectGuid>{FCDE6944-3ED9-4E4A-B938-E7DE947D10FA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Prototype</RootNamespace>
-    <AssemblyName>Prototype</AssemblyName>
+    <RootNamespace>Concepts.Prototype</RootNamespace>
+    <AssemblyName>Concepts.Prototype</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

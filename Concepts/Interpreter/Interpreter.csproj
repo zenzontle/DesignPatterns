@@ -7,8 +7,8 @@
     <ProjectGuid>{B69AEAB8-836B-46C4-91EC-8CE5053F7511}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Interpreter</RootNamespace>
-    <AssemblyName>Interpreter</AssemblyName>
+    <RootNamespace>Concepts.Interpreter</RootNamespace>
+    <AssemblyName>Concepts.Interpreter</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

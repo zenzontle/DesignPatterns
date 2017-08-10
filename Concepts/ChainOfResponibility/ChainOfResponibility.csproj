@@ -7,8 +7,8 @@
     <ProjectGuid>{D84769E6-8E86-4DF3-90AB-E4D85A22254D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ChainOfResponibility</RootNamespace>
-    <AssemblyName>ChainOfResponibility</AssemblyName>
+    <RootNamespace>Concepts.ChainOfResponibility</RootNamespace>
+    <AssemblyName>Concepts.ChainOfResponibility</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
