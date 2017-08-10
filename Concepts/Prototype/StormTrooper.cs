@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Prototype
+namespace Concepts.Prototype
 {
     public abstract class StormTrooper:ICloneable
     {

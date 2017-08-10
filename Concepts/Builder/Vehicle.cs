@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Builder
+namespace Concepts.Builder
 {
-    class Vehicle
+    public class Vehicle
     {
-        private string _vehicleType;
-        private Dictionary<string, string> _parts = new Dictionary<string, string>();
+        private readonly string _vehicleType;
+        private readonly Dictionary<string, string> _parts = new Dictionary<string, string>();
 
         public Vehicle(string vehicleType)
         {

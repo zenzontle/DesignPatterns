@@ -1,29 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Builder
+namespace Concepts.Builder
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            VehicleBuilder builder;
-
             Shop shop = new Shop();
 
-            builder = new ScooterBuilder();
+            VehicleBuilder builder = new ScooterBuilder();
             shop.Construct(builder);
-            builder.Vehicle.Show();
+            builder.VehicleInstance.Show();
 
             builder = new MotorCycleBuilder();
             shop.Construct(builder);
-            builder.Vehicle.Show();
+            builder.VehicleInstance.Show();
 
             Console.ReadKey();
         }
-        
     }
 }

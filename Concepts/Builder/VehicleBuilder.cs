@@ -1,19 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Builder
+﻿namespace Concepts.Builder
 {
-    abstract class VehicleBuilder
+    public abstract class VehicleBuilder
     {
-        protected Vehicle _vehicle;
-
-        public Vehicle Vehicle
-        {
-            get { return _vehicle; }
-        }
+        public Vehicle VehicleInstance { get; protected set; }
 
         public abstract void BuildFrame();
         public abstract void BuildEngine();

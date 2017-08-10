@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Builder
+﻿namespace Concepts.Builder
 {
-    class Shop
+    public class Shop
     {
         public void Construct(VehicleBuilder vehicleBuilder)
         {

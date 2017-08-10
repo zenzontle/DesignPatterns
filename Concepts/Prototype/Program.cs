@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Prototype
+namespace Concepts.Prototype
 {
     class Program
     {
@@ -19,6 +15,11 @@ namespace Prototype
             if (stormCommander2 != null)
             {
                 Console.WriteLine("Firepower: {0}, Armor: {1}", stormCommander2.FirePower, stormCommander2.Armor);
+            }
+
+            if (infantry2 != null)
+            {
+                Console.WriteLine("Firepower: {0}, Armor: {1}", infantry2.FirePower, infantry2.Armor);
             }
 
             Console.ReadKey();

@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Composite
+namespace Concepts.Composite
 {
-    class Worker : IEmployee
+    public class Worker : IEmployee
     {
-        private string _name;
-        private int _happiness;
+        private readonly string _name;
+        private readonly int _happiness;
 
         public Worker(string name, int happiness)
         {
@@ -18,7 +14,7 @@ namespace Composite
         }
         public void ShowHappiness()
         {
-            Console.WriteLine(String.Format("{0} showed happiness level of {1}", _name, _happiness));
+            Console.WriteLine($"{_name} showed happiness level of {_happiness}");
         }
     }
 }

@@ -1,17 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Composite
+namespace Concepts.Composite
 {
-    class Supervisor : IEmployee
+    public class Supervisor : IEmployee
     {
-        private string _name;
-        private int _happiness;
+        private readonly string _name;
+        private readonly int _happiness;
 
-        private List<IEmployee> subordinate = new List<IEmployee>();
+        private readonly List<IEmployee> _subordinate = new List<IEmployee>();
 
         public Supervisor(string name, int happiness)
         {
@@ -21,15 +18,15 @@ namespace Composite
 
         public void ShowHappiness()
         {
-            Console.WriteLine(String.Format("{0} showed happiness level of {1}", _name, _happiness));
-            foreach (IEmployee employee in subordinate)
+            Console.WriteLine($"{_name} showed happiness level of {_happiness}");
+            foreach (IEmployee employee in _subordinate)
             {
                 employee.ShowHappiness();
             }
         }
         public void AddSubordinate(IEmployee employee)
         {
-            subordinate.Add(employee);
+            _subordinate.Add(employee);
         }
     }
 }

@@ -1,19 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Facade
+namespace Concepts.Facade
 {
     /// <summary>
     /// The Facade class
     /// </summary>
-    class Mortgage
+    public class Mortgage
     {
-        private Bank _bank = new Bank();
-        private Loan _loan = new Loan();
-        private Credit _credit = new Credit();
+        private readonly Bank _bank = new Bank();
+        private readonly Loan _loan = new Loan();
+        private readonly Credit _credit = new Credit();
 
         public bool IsEligible(Customer customer, int amount)
         {

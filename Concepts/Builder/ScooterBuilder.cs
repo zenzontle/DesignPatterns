@@ -1,35 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Builder
+﻿namespace Concepts.Builder
 {
-    class ScooterBuilder : VehicleBuilder
+    public class ScooterBuilder : VehicleBuilder
     {
         public ScooterBuilder()
         {
-            _vehicle = new Vehicle("Scooter");
+            VehicleInstance = new Vehicle("Scooter");
         }
 
         public override void BuildFrame()
         {
-            _vehicle["frame"] = "Scooter Frame";
+            VehicleInstance["frame"] = "Scooter Frame";
         }
 
         public override void BuildEngine()
         {
-            _vehicle["engine"] = "50 cc";
+            VehicleInstance["engine"] = "50 cc";
         }
 
         public override void BuildWheels()
         {
-            _vehicle["wheels"] = "2";
+            VehicleInstance["wheels"] = "2";
         }
 
         public override void BuildDoors()
         {
-            _vehicle["doors"] = "0";
+            VehicleInstance["doors"] = "0";
         }
     }
 }

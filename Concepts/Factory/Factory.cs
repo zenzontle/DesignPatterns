@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Factory
+﻿namespace Concepts.Factory
 {
     public enum PeopleType
 	{
-        RURAL,
-        URBAN
+        None,
+        Rural,
+        Urban
 	}
 
     public class Factory
@@ -19,13 +14,11 @@ namespace Factory
             IPeople people = null;
             switch (type)
             {
-                case PeopleType.RURAL:
+                case PeopleType.Rural:
                     people = new Villagers();
                     break;
-                case PeopleType.URBAN:
+                case PeopleType.Urban:
                     people = new CityPeople();
-                    break;
-                default:
                     break;
             }
             return people;

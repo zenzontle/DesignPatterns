@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Facade
+namespace Concepts.Facade
 {
-    class Loan
+    public class Loan
     {
         public bool HasNoBadLoands(Customer customer)
         {
-            Console.WriteLine(String.Format("Check loands for {0}", customer.Name));
+            Console.WriteLine($"Check loands for {customer.Name}");
             return true;
         }
     }

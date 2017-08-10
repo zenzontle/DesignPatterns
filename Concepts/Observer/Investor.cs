@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Observer
+namespace Concepts.Observer
 {
-    class Investor : IInvestor
+    public class Investor : IInvestor
     {
-        private string _name;
-        private Stock _stock;
+        private readonly string _name;
 
         public Investor(string name)
         {
@@ -21,10 +16,6 @@ namespace Observer
             Console.WriteLine("Notified {0} of {1}'s change to {2:c}", _name, stock.Symbol, stock.Price);
         }
 
-        public Stock Stock
-        {
-            get { return _stock; }
-            set { _stock = value; }
-        }
+        public Stock Stock { get; set; }
     }
 }

@@ -1,20 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Observer
+namespace Concepts.Observer
 {
-    abstract class Stock
+    public abstract class Stock
     {
-        private string _symbol;
         private double _price;
-        private List<IInvestor> _investors = new List<IInvestor>();
+        private readonly List<IInvestor> _investors = new List<IInvestor>();
 
-        public Stock(string symbol, double price)
+        protected Stock(string symbol, double price)
         {
-            _symbol = symbol;
+            Symbol = symbol;
             _price = price;
         }
 
@@ -50,9 +46,6 @@ namespace Observer
             }
         }
 
-        public string Symbol
-        {
-            get { return _symbol; }
-        }
+        public string Symbol { get; }
     }
 }

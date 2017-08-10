@@ -1,21 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Factory
+namespace Concepts.Factory
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Factory factory = new Factory();
-            IPeople people = factory.GetPeople(PeopleType.URBAN);
+            IPeople people = factory.GetPeople(PeopleType.Urban);
 
             Console.WriteLine(people.GetName());
 
-            people = factory.GetPeople(PeopleType.RURAL);
+            people = factory.GetPeople(PeopleType.Rural);
             Console.WriteLine(people.GetName());
 
             Console.ReadKey();

@@ -1,21 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Bridge
+namespace Concepts.Bridge
 {
     public class NewLogger : ILog
     {
         public void Log(string textToLog)
         {
-            Console.WriteLine(String.Format("NewLog {0}", textToLog));
+            Console.WriteLine($"NewLog {textToLog}");
         }
 
         public void LogError(string errorToLog)
         {
-            Console.WriteLine(String.Format("NewError {0}", errorToLog));
+            Console.WriteLine($"NewError {errorToLog}");
         }
     }
 }

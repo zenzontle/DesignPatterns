@@ -1,24 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Facade
+﻿namespace Concepts.Facade
 {
-    class Customer
+    public class Customer
     {
-        private string _name;
-
         public Customer(string name)
         {
-            _name = name;
+            Name = name;
         }
 
-        public string Name
-        {
-            get { return _name; }
-        }
-
+        public string Name { get; }
     }
 }

@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Factory
+﻿namespace Concepts.Factory
 {
-    class Villagers : IPeople
+    public class Villagers : IPeople
     {
         public string GetName()
         {

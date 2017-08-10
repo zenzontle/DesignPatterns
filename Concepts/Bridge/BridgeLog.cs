@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Bridge
+﻿namespace Concepts.Bridge
 {
     public class BridgeLog : ILogBridge
     {
-        private ILog _log;
+        private readonly ILog _log;
         public BridgeLog(ILog log)
         {
             _log = log;
