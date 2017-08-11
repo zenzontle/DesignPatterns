@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace AbstractFactory.AbstractCars
+﻿namespace Concepts.AbstractFactory.AbstractCars
 {
-    abstract class FamilyCar
+    public abstract class FamilyCar
     {
         public abstract void RunSlow();
     }

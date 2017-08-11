@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Visitor
+namespace Concepts.Visitor
 {
-    class Employees
+    public class Employees
     {
-        private List<Employee> _employees = new List<Employee>();
+        private readonly List<Employee> _employees = new List<Employee>();
 
         public void Attach(Employee employee)
         {
@@ -28,6 +25,5 @@ namespace Visitor
             }
             Console.WriteLine();
         }
-
     }
 }

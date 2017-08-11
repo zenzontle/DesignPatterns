@@ -1,18 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ChainOfResponibility
+namespace Concepts.ChainOfResponibility
 {
-    class President : Approver
+    public class President : Approver
     {
         public override void ProcessRequest(Purchase purchase)
         {
             if (purchase.Amount < 100000.0)
             {
-                Console.WriteLine("{0} approved request #{1}", this.GetType().Name, purchase.Number);
+                Console.WriteLine("{0} approved request #{1}", GetType().Name, purchase.Number);
             }
             else
             {

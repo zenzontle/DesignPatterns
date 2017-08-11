@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ChainOfResponibility
+﻿namespace Concepts.ChainOfResponibility
 {
-    abstract class Approver
+    public abstract class Approver
     {
-        protected Approver _successor;
+        protected Approver Successor;
 
         public void SetSuccessor(Approver successor)
         {
-            _successor = successor;
+            Successor = successor;
         }
 
         public abstract void ProcessRequest(Purchase purchase);

@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AbstractFactory.AbstractCars;
-using AbstractFactory.AbstractFactories;
-using AbstractFactory.ConcreteCars;
+﻿using Concepts.AbstractFactory.AbstractCars;
+using Concepts.AbstractFactory.AbstractFactories;
+using Concepts.AbstractFactory.ConcreteCars;
 
-namespace AbstractFactory.ConcreteFactories
+namespace Concepts.AbstractFactory.ConcreteFactories
 {
-    class MercedesCarFactory : CarFactory
+    public class MercedesCarFactory : CarFactory
     {
         public override SportsCar CreateSportsCar()
         {

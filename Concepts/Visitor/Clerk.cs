@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Visitor
+﻿namespace Concepts.Visitor
 {
-    class Clerk : Employee
+    public class Clerk : Employee
     {
         public Clerk()
             : base("Hank", 25000, 14)

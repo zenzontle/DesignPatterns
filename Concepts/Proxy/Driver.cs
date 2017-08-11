@@ -1,24 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Proxy
+﻿namespace Concepts.Proxy
 {
-    class Driver
+    public class Driver
     {
-        private int _age;
-
-        public int Age
-        {
-            get { return _age; }
-            set { _age = value; }
-        }
+        public int Age { get; set; }
 
         public Driver(int age)
         {
-            _age = age;
+            Age = age;
         }
     }
 }

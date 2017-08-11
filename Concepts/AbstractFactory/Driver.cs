@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using AbstractFactory.AbstractCars;
-using AbstractFactory.AbstractFactories;
+﻿using Concepts.AbstractFactory.AbstractCars;
+using Concepts.AbstractFactory.AbstractFactories;
 
-namespace AbstractFactory
+namespace Concepts.AbstractFactory
 {
-    class Driver
+    public class Driver
     {
         private readonly SportsCar _sportsCar;
         private readonly FamilyCar _familyCar;

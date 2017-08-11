@@ -1,40 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ChainOfResponibility
+﻿namespace Concepts.ChainOfResponibility
 {
-    class Purchase
+    public class Purchase
     {
-        private int _number;
-        private double _amount;
-        private string _purpose;
-
         public Purchase(int number, double amount, string purpose)
         {
-            _number = number;
-            _amount = amount;
-            _purpose = purpose;
+            Number = number;
+            Amount = amount;
+            Purpose = purpose;
         }
 
-        public int Number
-        { 
-            get { return _number;}
-            set { _number = value;}
-        }
+        public int Number { get; set; }
 
-        public double Amount
-        {
-            get { return _amount; }
-            set { _amount = value; }
-        }
+        public double Amount { get; set; }
 
-        public string Purpose
-        {
-            get { return _purpose; }
-            set { _purpose = value; }
-        }
+        public string Purpose { get; set; }
     }
 }

@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Proxy
+namespace Concepts.Proxy
 {
-    class ProxyCar : ICar
+    public class ProxyCar : ICar
     {
-        private Driver _driver;
-        private ICar _realCar;
+        private readonly Driver _driver;
+        private readonly ICar _realCar;
 
         public ProxyCar(Driver driver)
         {

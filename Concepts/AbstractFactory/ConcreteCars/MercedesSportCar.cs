@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using AbstractFactory.AbstractCars;
+using Concepts.AbstractFactory.AbstractCars;
 
-namespace AbstractFactory.ConcreteCars
+namespace Concepts.AbstractFactory.ConcreteCars
 {
-    class MercedesSportCar : SportsCar
+    public class MercedesSportCar : SportsCar
     {
         public override void RunFast()
         {
