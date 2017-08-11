@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Command
+namespace Concepts.Command
 {
-    class Calculator
+    public class Calculator
     {
-        private int _current = 0;
+        private int _current;
 
         public void Operation(char @operator, int operand)
         {

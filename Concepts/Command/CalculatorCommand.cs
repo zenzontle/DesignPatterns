@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Command
+namespace Concepts.Command
 {
-    class CalculatorCommand : Command
+    public class CalculatorCommand : Command
     {
         private char _operator;
         private int _operand;
-        private Calculator _calculator;
+        private readonly Calculator _calculator;
 
         public CalculatorCommand(Calculator calculator, char @operator, int operand)
         {

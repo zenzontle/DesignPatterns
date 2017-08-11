@@ -1,31 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace State
+namespace Concepts.State
 {
-    class RedState : State
+    public class RedState : State
     {
         private double _serviceFee;
 
         public RedState(State state)
         {
-            balance = state.Balance;
-            account = state.Account;
+            BalanceInternal = state.Balance;
+            AccountInternal = state.Account;
             Initialize();
         }
 
         public override void Deposit(double amount)
         {
-            balance += amount;
+            BalanceInternal += amount;
             StateChangeCheck();
         }
 
         public override void Withdraw(double amount)
         {
-            amount = amount - _serviceFee;
+            BalanceInternal = amount - _serviceFee;
             Console.WriteLine("No funds available for withdrawal!");
         }
 
@@ -36,17 +32,17 @@ namespace State
 
         private void Initialize()
         {
-            interest = 0;
-            lowerLimit = -100;
-            upperLimit = 0;
+            Interest = 0;
+            LowerLimit = -100;
+            UpperLimit = 0;
             _serviceFee = 15;
         }
 
         private void StateChangeCheck()
         {
-            if (balance > upperLimit)
+            if (BalanceInternal > UpperLimit)
             {
-                account.State = new SilverState(this);
+                AccountInternal.State = new SilverState(this);
             }
         }
     }

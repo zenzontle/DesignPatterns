@@ -1,30 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace State
+﻿namespace Concepts.State
 {
-    abstract class State
+    public abstract class State
     {
-        protected Account account;
-        protected double balance;
+        protected Account AccountInternal;
+        protected double BalanceInternal;
 
-        protected double interest;
-        protected double lowerLimit;
-        protected double upperLimit;
+        protected double Interest;
+        protected double LowerLimit;
+        protected double UpperLimit;
 
         public Account Account
         {
-            get { return account; }
-            set { account = value; }
+            get { return AccountInternal; }
+            set { AccountInternal = value; }
         }
 
         public double Balance
         {
-            get { return balance; }
-            set { balance = value; }
+            get { return BalanceInternal; }
+            set { BalanceInternal = value; }
         }
 
         public abstract void Deposit(double amount);

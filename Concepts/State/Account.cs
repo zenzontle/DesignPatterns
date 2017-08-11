@@ -1,57 +1,48 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace State
+namespace Concepts.State
 {
-    class Account
+    public class Account
     {
-        private State _state;
-        private string _owner;
+        private readonly string _owner;
 
         public Account(string owner)
         {
             _owner = owner;
-            _state = new SilverState(0, this);
+            State = new SilverState(0, this);
         }
 
-        public double Balance
-        {
-            get { return _state.Balance; }
-        }
+        public double Balance => State.Balance;
 
-        public State State
-        {
-            get { return _state; }
-            set { _state = value; }
-        }
+        public State State { get; set; }
 
         public void Deposit(double amount)
         {
-            _state.Deposit(amount);
+            State.Deposit(amount);
+            Console.WriteLine("Owner {0} --- ", _owner);
             Console.WriteLine("Deposited {0:C} --- ", amount);
-            Console.WriteLine(" Balance = {0:C}", this.Balance);
-            Console.WriteLine(" Status = {0}", this.State.GetType().Name);
+            Console.WriteLine(" Balance = {0:C}", Balance);
+            Console.WriteLine(" Status = {0}", State.GetType().Name);
             Console.WriteLine("");
         }
 
         public void Withdraw(double amount)
         {
-            _state.Withdraw(amount);
+            State.Withdraw(amount);
+            Console.WriteLine("Owner {0} --- ", _owner);
             Console.WriteLine("Withdrew {0:C} --- ", amount);
-            Console.WriteLine(" Balance = {0:C}", this.Balance);
-            Console.WriteLine(" Status = {0}", this.State.GetType().Name);
+            Console.WriteLine(" Balance = {0:C}", Balance);
+            Console.WriteLine(" Status = {0}", State.GetType().Name);
             Console.WriteLine("");
         }
 
         public void PayInterest()
         {
-            _state.PayInterest();
+            State.PayInterest();
+            Console.WriteLine("Owner {0} --- ", _owner);
             Console.WriteLine("Interest paid ---");
-            Console.WriteLine(" Balance = {0:C}", this.Balance);
-            Console.WriteLine(" Status = {0}", this.State.GetType().Name);
+            Console.WriteLine(" Balance = {0:C}", Balance);
+            Console.WriteLine(" Status = {0}", State.GetType().Name);
             Console.WriteLine("");
         }
     }

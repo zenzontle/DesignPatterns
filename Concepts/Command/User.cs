@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Command
+namespace Concepts.Command
 {
-    class User
+    public class User
     {
-        private Calculator _calculator = new Calculator();
-        private List<Command> _commands = new List<Command>();
-        private int _current = 0;
+        private readonly Calculator _calculator = new Calculator();
+        private readonly List<Command> _commands = new List<Command>();
+        private int _current;
 
         public void Redo(int levels)
         {
@@ -34,7 +31,7 @@ namespace Command
             {
                 if (_current > 0)
                 {
-                    Command command = _commands[--_current] as Command;
+                    Command command = _commands[--_current];
                     command.UnExecute();
                 }
             }

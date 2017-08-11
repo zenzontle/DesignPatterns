@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Strategy
+namespace Concepts.Strategy
 {
-    class SortedList
+    public class SortedList
     {
-        private List<string> _list = new List<string>();
+        private readonly List<string> _list = new List<string>();
         private SortStrategy _sortStrategy;
 
         public void SetSortStrategy(SortStrategy sortStrategy)

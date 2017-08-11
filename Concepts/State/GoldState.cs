@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace State
+﻿namespace Concepts.State
 {
-    class GoldState : State
+    public class GoldState : State
     {
         public GoldState(State state)
             : this(state.Balance, state.Account)
@@ -15,47 +9,46 @@ namespace State
 
         public GoldState(double balance, Account account)
         {
-            this.balance = balance;
-            this.account = account;
+            BalanceInternal = balance;
+            AccountInternal = account;
             Initialize();
         }
 
         public override void Deposit(double amount)
         {
-            balance += amount;
+            BalanceInternal += amount;
             StateChangeCheck();
         }
 
         public override void Withdraw(double amount)
         {
-            balance -= amount;
+            BalanceInternal -= amount;
             StateChangeCheck();
         }
 
         public override void PayInterest()
         {
-            balance += interest * balance;
+            BalanceInternal += Interest * BalanceInternal;
             StateChangeCheck();
         }
 
         private void Initialize()
         {
-            interest = 0.05;
-            lowerLimit = 1000;
-            upperLimit = 10000000;
+            Interest = 0.05;
+            LowerLimit = 1000;
+            UpperLimit = 10000000;
         }
 
         private void StateChangeCheck()
         {
-            if (balance < 0)
+            if (BalanceInternal < 0)
             {
-                account.State = new RedState(this);
+                AccountInternal.State = new RedState(this);
             }
-            else if (balance < lowerLimit)
+            else if (BalanceInternal < LowerLimit)
             {
-                account.State = new SilverState(this);
+                AccountInternal.State = new SilverState(this);
             }
         }
-
     }
 }
