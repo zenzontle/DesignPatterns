@@ -1,24 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace TemplateMethod
+namespace Concepts.TemplateMethod
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            SystemOperator systemOperator = new SystemOperator();
-            systemOperator.CellPhone = "123456789";
-            systemOperator.Email = "test@operator.com";
-            systemOperator.Name = "Super Operator";
-            systemOperator.Pager = "951753";
+            SystemOperator systemOperator = new SystemOperator
+            {
+                CellPhone = "123456789",
+                Email = "test@operator.com",
+                Name = "Super Operator",
+                Pager = "951753"
+            };
 
-            Message message = new Message();
+            Message message = new Message {Sender = new SmsNotificationSender(systemOperator)};
 
-            message.Sender = new SmsNotificationSender(systemOperator);
             message.Send();
 
             message.Sender = new MailNotificationSender(systemOperator);

@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace Mediator
+namespace Concepts.Mediator
 {
-    class Chatroom : AbstractChatroom
+    public class Chatroom : AbstractChatroom
     {
-        private Dictionary<string, Participant> _participants = new Dictionary<string, Participant>();
+        private readonly Dictionary<string, Participant> _participants = new Dictionary<string, Participant>();
 
         public override void Register(Participant participant)
         {
@@ -24,10 +20,7 @@ namespace Mediator
         {
             Participant participant = _participants[to];
 
-            if (participant != null)
-            {
-                participant.Receive(from, message);
-            }
+            participant?.Receive(from, message);
         }
     }
 }

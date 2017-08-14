@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TemplateMethod
+﻿namespace Concepts.TemplateMethod
 {
-    class SystemOperator
+    public class SystemOperator
     {
         public string Name { get; set; }
         public string Pager { get; set; }

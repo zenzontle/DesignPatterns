@@ -1,23 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Memento
+namespace Concepts.Memento
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            SalesProspect salesProspect = new SalesProspect();
-            salesProspect.Name = "Noel van Halen";
-            salesProspect.Phone = "(412) 256-0990";
-            salesProspect.Budget = 25000;
+            SalesProspect salesProspect = new SalesProspect
+            {
+                Name = "Noel van Halen",
+                Phone = "(412) 256-0990",
+                Budget = 25000
+            };
 
             //Store internal state
-            ProspectMemory prospectMemory = new ProspectMemory();
-            prospectMemory.Memento = salesProspect.SaveMemento();
+            ProspectMemory prospectMemory = new ProspectMemory {Memento = salesProspect.SaveMemento()};
 
             salesProspect.Name = "Leo Welch";
             salesProspect.Phone = "(310) 209-7111";
@@ -27,7 +24,6 @@ namespace Memento
             salesProspect.RestoreMemento(prospectMemory.Memento);
 
             Console.ReadKey();
-
         }
     }
 }

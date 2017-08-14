@@ -1,35 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Mediator
+namespace Concepts.Mediator
 {
-    class Participant
+    public class Participant
     {
-        private Chatroom _chatroom;
-        private string _name;
-
         public Participant(string name)
         {
-            _name = name;
+            Name = name;
         }
 
-        public string Name
-        {
-            get { return _name; }
-        }
+        public string Name { get; }
 
-        public Chatroom Chatroom
-        {
-            get { return _chatroom; }
-            set { _chatroom = value; }
-        }
+        public Chatroom Chatroom { get; set; }
 
         public void Send(string to, string message)
         {
-            _chatroom.Send(_name, to, message);
+            Chatroom.Send(Name, to, message);
         }
 
         public virtual void Receive(string from, string message)

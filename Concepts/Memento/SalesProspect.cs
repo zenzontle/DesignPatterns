@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Memento
+namespace Concepts.Memento
 {
-    class SalesProspect
+    public class SalesProspect
     {
         private string _name;
         private string _phone;

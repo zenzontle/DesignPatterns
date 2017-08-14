@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Interpreter
+﻿namespace Concepts.Interpreter
 {
-    abstract class Expression
+    public abstract class Expression
     {
         public void Interpreter(Context context)
         {

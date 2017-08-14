@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Iterator
+﻿namespace Concepts.Iterator
 {
-    class Iterator : IAbstractIterator
+    public class Iterator : IAbstractIterator
     {
-        private Collection _collection;
-        private int _current = 0;
-        private int _step = 1;
+        private readonly Collection _collection;
+        private int _current;
 
         public Iterator(Collection collection)
         {
@@ -20,36 +13,23 @@ namespace Iterator
         public Item First()
         {
             _current = 0;
-            return _collection[_current] as Item;
+            return _collection[_current];
         }
 
         public Item Next()
         {
-            _current += _step;
+            _current += Step;
             if (!IsDone)
             {
-                return _collection[_current] as Item;
+                return _collection[_current];
             }
-            else
-            {
-                return null;
-            }
+            return null;
         }
 
-        public int Step
-        {
-            get { return _step; }
-            set { _step = value; }
-        }
+        public int Step { get; set; } = 1;
 
-        public bool IsDone
-        {
-            get { return _current >= _collection.Count; }
-        }
+        public bool IsDone => _current >= _collection.Count;
 
-        public Item CurrentItem
-        {
-            get { return _collection[_current] as Item; }
-        }
+        public Item CurrentItem => _collection[_current];
     }
 }

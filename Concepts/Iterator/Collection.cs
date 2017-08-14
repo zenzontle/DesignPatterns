@@ -1,25 +1,17 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace Iterator
+namespace Concepts.Iterator
 {
-    class Collection : IAbstractCollection
+    public class Collection : IAbstractCollection
     {
-        private List<Item> _items = new List<Item>();
+        private readonly List<Item> _items = new List<Item>();
 
         public Iterator CreateIterator()
         {
             return new Iterator(this);
         }
 
-        public int Count
-        {
-            get { return _items.Count; }
-        }
+        public int Count => _items.Count;
 
         public Item this[int index]
         {

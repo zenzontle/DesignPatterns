@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Iterator
+﻿namespace Concepts.Iterator
 {
-    interface IAbstractIterator
+    public interface IAbstractIterator
     {
         Item First();
         Item Next();

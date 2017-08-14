@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Adapter
+﻿namespace Concepts.Adapter
 {
-    class LegacyLoggerAdapter : ILog
+    public class LegacyLoggerAdapter : ILog
     {
-        private LegacyLogger _legacyLogger = new LegacyLogger();
+        private readonly LegacyLogger _legacyLogger = new LegacyLogger();
         public void Log(string textToLog)
         {
             _legacyLogger.LogSomething(textToLog);

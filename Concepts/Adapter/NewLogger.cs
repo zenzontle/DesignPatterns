@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Adapter
+namespace Concepts.Adapter
 {
-    class NewLogger : ILog
+    public class NewLogger : ILog
     {
         public void Log(string textToLog)
         {
-            Console.WriteLine(String.Format("New Logger {0}", textToLog));
+            Console.WriteLine($"New Logger {textToLog}");
         }
     }
 }

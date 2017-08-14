@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Interpreter
+﻿namespace Concepts.Interpreter
 {
-    class HundredExpression : Expression
+    public class HundredExpression : Expression
     {
         public override string One()
         {

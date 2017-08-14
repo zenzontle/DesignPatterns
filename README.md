@@ -28,6 +28,6 @@ Here's the recommended way to learn them, taken from http://programmers.stackexc
 - Flyweight
 - Mediator
 - Iterator
-- Momento
+- Memento
 - Template Method
 - Interpreter

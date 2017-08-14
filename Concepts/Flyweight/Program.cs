@@ -1,16 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Flyweight
+namespace Concepts.Flyweight
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            string document = "AABBAB";
+            const string document = "AABBAB";
             char[] chars = document.ToCharArray();
 
             CharacterFactory characterFactory = new CharacterFactory();

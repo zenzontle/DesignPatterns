@@ -1,40 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Memento
+﻿namespace Concepts.Memento
 {
-    class Memento
+    public class Memento
     {
-        private string _name;
-        private string _phone;
-        private double _budget;
-
         public Memento(string name, string phone, double budget)
         {
-            _name = name;
-            _phone = phone;
-            _budget = budget;
+            Name = name;
+            Phone = phone;
+            Budget = budget;
         }
 
-        public string Name
-        {
-            get { return _name; }
-            set { _name = value; }
-        }
+        public string Name { get; set; }
 
-        public string Phone
-        {
-            get { return _phone; }
-            set { _phone = value; }
-        }
+        public string Phone { get; set; }
 
-        public double Budget
-        {
-            get { return _budget; }
-            set { _budget = value; }
-        }
+        public double Budget { get; set; }
     }
 }

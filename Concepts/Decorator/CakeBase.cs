@@ -1,24 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Decorator
+﻿namespace Concepts.Decorator
 {
-    class CakeBase : BakeryComponent
+    public class CakeBase : BakeryComponent
     {
-        private string _name = "Cake Base";
-        private decimal _price = 200;
+        private const string Name = "Cake Base";
+        private const decimal Price = 200;
 
         public override string GetName()
         {
-            return _name;
+            return Name;
         }
 
         public override decimal GetPrice()
         {
-            return _price;
+            return Price;
         }
     }
 }

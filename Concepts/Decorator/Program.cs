@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Decorator
+namespace Concepts.Decorator
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -35,7 +31,7 @@ namespace Decorator
             Console.ReadKey();
         }
 
-        static void PrintProductDetails(BakeryComponent bakeryComponent)
+        private static void PrintProductDetails(BakeryComponent bakeryComponent)
         {
             Console.WriteLine("Item: {0}, Price: {1}\n", bakeryComponent.GetName(), bakeryComponent.GetPrice());
         }

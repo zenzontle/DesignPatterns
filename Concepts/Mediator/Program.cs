@@ -1,35 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Mediator
+namespace Concepts.Mediator
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             //Create the mediator
             Chatroom chatroom = new Chatroom();
 
-            Participant George = new Beatle("George");
-            Participant Paul = new Beatle("Paul");
-            Participant Ringo = new Beatle("Ringo");
-            Participant John = new Beatle("John");
-            Participant Yoko = new NonBeatle("Yoko");
+            Participant george = new Beatle("George");
+            Participant paul = new Beatle("Paul");
+            Participant ringo = new Beatle("Ringo");
+            Participant john = new Beatle("John");
+            Participant yoko = new NonBeatle("Yoko");
 
-            chatroom.Register(George);
-            chatroom.Register(Paul);
-            chatroom.Register(Ringo);
-            chatroom.Register(John);
-            chatroom.Register(Yoko);
+            chatroom.Register(george);
+            chatroom.Register(paul);
+            chatroom.Register(ringo);
+            chatroom.Register(john);
+            chatroom.Register(yoko);
 
-            Yoko.Send("John", "Hi John!");
-            Paul.Send("Ringo", "All you need is love");
-            Ringo.Send("George", "My sweet Lord");
-            Paul.Send("John", "Can't buy me love");
-            John.Send("Yoko", "My sweet love");
+            yoko.Send("John", "Hi John!");
+            paul.Send("Ringo", "All you need is love");
+            ringo.Send("George", "My sweet Lord");
+            paul.Send("John", "Can't buy me love");
+            john.Send("Yoko", "My sweet love");
 
             Console.ReadKey();
         }

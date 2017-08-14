@@ -1,17 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Decorator
+﻿namespace Concepts.Decorator
 {
-    class CherryDecorator : Decorator
+    public class CherryDecorator : Decorator
     {
         public CherryDecorator(BakeryComponent baseComponent) : base(baseComponent)
         {
-            _name = "Cherry";
-            _price = 2;
+            Name = "Cherry";
+            Price = 2;
         }
     }
 }

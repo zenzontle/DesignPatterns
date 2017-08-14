@@ -1,23 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Interpreter
+namespace Concepts.Interpreter
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            string roman = "MCMXXVIII";
+            const string roman = "MCMXXVIII";
             Context context = new Context(roman);
 
-            List<Expression> tree = new List<Expression>();
-            tree.Add(new ThousandExpression());
-            tree.Add(new HundredExpression());
-            tree.Add(new TenExpression());
-            tree.Add(new OneExpression());
+            List<Expression> tree = new List<Expression>
+            {
+                new ThousandExpression(),
+                new HundredExpression(),
+                new TenExpression(),
+                new OneExpression()
+            };
 
             foreach (Expression exp in tree)
             {

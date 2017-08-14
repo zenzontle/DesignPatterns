@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TemplateMethod
+﻿namespace Concepts.TemplateMethod
 {
-    abstract class NotificationSender
+    public abstract class NotificationSender
     {
-        protected SystemOperator _systemOperator;
+        protected SystemOperator SystemOperator;
 
-        public NotificationSender(SystemOperator systemOperator)
+        protected NotificationSender(SystemOperator systemOperator)
         {
-            _systemOperator = systemOperator;
+            SystemOperator = systemOperator;
         }
 
         protected abstract string GetNotificationMessageText();

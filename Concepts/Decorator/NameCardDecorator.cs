@@ -1,24 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Decorator
+﻿namespace Concepts.Decorator
 {
-    class NameCardDecorator : Decorator
+    public class NameCardDecorator : Decorator
     {
-        private int _discountRate = 5;
+        private const int DiscountRate = 5;
 
         public NameCardDecorator(BakeryComponent baseComponent) : base(baseComponent)
         {
-            _name = "Name Card";
-            _price = 4;
+            Name = "Name Card";
+            Price = 4;
         }
 
         public override string GetName()
         {
-            return base.GetName() + String.Format("\n Please collect your discount card for {0}%", _discountRate);
+            return base.GetName() + $"\n Please collect your discount card for {DiscountRate}%";
         }
     }
 }

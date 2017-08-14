@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Mediator
+namespace Concepts.Mediator
 {
-    class NonBeatle : Participant
+    public class NonBeatle : Participant
     {
         public NonBeatle(string name)
             : base(name)

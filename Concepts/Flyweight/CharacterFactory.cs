@@ -1,21 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace Flyweight
+namespace Concepts.Flyweight
 {
     /// <summary>
     /// Flyweight factory
     /// </summary>
-    class CharacterFactory
+    public class CharacterFactory
     {
-        private Dictionary<char, Character> _characters = new Dictionary<char, Character>();
+        private readonly Dictionary<char, Character> _characters = new Dictionary<char, Character>();
 
         public Character GetCharacter(char key)
         {
-            Character character = null;
+            Character character;
             if (_characters.ContainsKey(key))
             {
                 character = _characters[key];

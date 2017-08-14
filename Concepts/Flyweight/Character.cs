@@ -1,22 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Flyweight
+﻿namespace Concepts.Flyweight
 {
     /// <summary>
     /// The Flyweight abstract class
     /// </summary>
-    abstract class Character
+    public abstract class Character
     {
-        protected char _symbol;
-        protected int _width;
-        protected int _height;
-        protected int _ascent;
-        protected int _descent;
-        protected int _pointSize;
+        protected char Symbol;
+        protected int Width;
+        protected int Height;
+        protected int Ascent;
+        protected int Descent;
+        protected int PointSize;
 
         public abstract void Display(int pointSize);
     }
